@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+    
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FF14 クエストガイド</title>
+  <!-- 日本語フォント -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap"/>
+  <!-- 样式表 -->
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* 可选：直接在head里加辅助高亮颜色（也可以写到 style.css） */
+    .highlight-exp   { color:#296db7; font-weight:bold; }
+    .highlight-gil   { color:#b07a13; font-weight:bold; }
+    .highlight-item  { color:#3a6f1c; font-weight:bold; }
+    .modal-content img { vertical-align:-0.22em; margin-right:0.15em; }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header style="padding:1rem; background:#5b3a0f;">
+    <a href="index.html" style="color:#fff; text-decoration:none; font-size:1.2rem;">
+      ← 戻る
+    </a>
+    <h1 style="display:inline-block; margin-left:1rem; color:#fff; font-family:'Noto Serif JP',serif;">
+      クエストガイド
+    </h1>
+  </header>
+
+  <!-- Main コンテンツ -->
+  <main style="max-width:1100px; margin:2rem auto; padding:0 1rem;">
+    <h2 class="section-title" style="font-family:'Noto Serif JP',serif; font-size:2rem; color:#5b3a0f; margin-bottom:1rem;">
+      クエストの種類
+    </h2>
+    <p style="font-family:'Noto Sans JP',sans-serif; font-size:1.08rem; line-height:1.8; color:#333;">
+      NPCたちはプレイヤーにさまざまなクエスト（依頼）を与えます。  
+      NPCと会話したり、アイテムを集めたり、モンスターを討伐するなど、  
+      指定された目標を達成すると、クエストストーリーの進展やゲーム機能の解放、  
+      そして
+      <span class="highlight-exp">
+        <img src="images/exp.png" style="height:1.2em;vertical-align:-0.18em;"> 経験値
+      </span>、
+      <span class="highlight-gil">
+        <img src="images/gil.png" style="height:1.2em;vertical-align:-0.18em;"> ギル
+      </span>、
+      <span class="highlight-item">アイテム</span>
+      などの報酬を得られます。<br><br>
+      このページでは、各クエストタイプの役割や特徴について解説します。  
+      ※個々のクエスト詳細は、ゲーム内の「クエスト検索」機能からご確認ください。<br><br>
+      クエストには多様な種類があり、それぞれに専用アイコンが設定されています。  
+      現在地（マップ）上のクエストは、専用アイコンで表示され、クエストを依頼するNPCの頭上にも同じアイコンが現れます。
+    </p>
+
+    <!-- —— クエストの種類カード —— -->
+    <section class="quest-types">
+      <h2>クエストの種類</h2>
+      <div class="types-grid">
+        <a href="#" class="type-card" 
+        data-title="メインクエスト"
+        data-html='
+メインクエストは、『ファイナルファンタジーXIV』の主要なストーリー展開を担っており、多くのクエストにはカットシーンやボイスが付属しています。<br>
+また、マップやダンジョンなど、ゲームの重要な機能の多くがメインクエストの進行によって解放されます。<br>
+例：レベル14のクエスト
+<span class="highlight-quest">「森の都と砂の都」</span>
+<span class="highlight-quest">「海の都と砂の都」</span>
+<span class="highlight-quest">「海の都と森の都」</span>では、
+<span class="highlight-city">リムサ・ロミンサ</span>、
+<span class="highlight-city">グリダニア</span>、
+<span class="highlight-city">ウルダハ</span>
+の三大都市間を結ぶエアシップ交通が解放されます。<br>
+レベル20のクエスト「英傑の卵」をクリアすると、いずれかのグランドカンパニー（国家団体）に所属できるようになります。<br>
+プレイヤーが最初に選択するクラスによって、開始都市が決まります。また、三都市それぞれの1～14レベルのメインクエスト（エアシップ解放前）は異なりますが、14レベルのクエスト以降は三つの物語が統合されます。<br>
+クエスト検索で表示される「リムサ・ロミンサ／ウルダハ／グリダニア開始クエスト」も、これらのシナリオ分岐に由来しています。'
+        >メインクエスト</a>
+
+        <a href="#" class="type-card"
+          data-title="サイドクエスト"
+          data-html='
+プレイヤーはサイドクエストを必ずしも進行する必要はありませんが、サイドクエストはメインストーリーの裏側や世界設定を補完し、クリアすることで
+<span class="highlight-exp"><img src="images/exp.png" style="height:1.2em;"> 経験値</span>、
+<span class="highlight-gil"><img src="images/gil.png" style="height:1.2em;"> ギル</span>、
+<span class="highlight-item">アイテム</span>
+などの報酬が得られます。<br>
+サイドクエストには、メインストーリー外伝クエスト、「名もなき冒険者」シリーズ、武器強化クエスト、特殊コンテンツ関連クエスト、サイドストーリークエストなど、さまざまな種類があります。'
+        >サイドクエスト</a>
+
+        <a href="#" class="type-card" data-title="重要クエスト"
+          data-html='
+ゲーム内ではこのカテゴリに正式な名称はありませんが、ここでは便宜上「重要クエスト」と呼称します。<br>
+この分類には、以下のようなゲーム進行や新要素解放に不可欠な重要な内容が含まれます：<br>
+・クロニクルクエスト（編年史クエスト）<br>
+・コンテンツ解放系のサブクエストおよび全ての必須前提クエスト（ダンジョン、風脈泉、染色、バディ取得など）<br>
+・武器強化サブクエストおよび全ての前提クエスト（例：マンダヴィルウェポン等、小規模パッチで段階的に強化できる特殊装備・道具の一連クエスト、非著名調査員など）<br>
+・一部の特殊コンテンツ系サブクエスト<br>
+・ジョブ／クラス／ロールクエスト（職業解放、スキル習得、職業ストーリー進行など）'
+        >重要クエスト</a>
+
+        <a href="#" class="type-card" data-title="リピートクエスト"
+          data-html='
+リピートクエストは、その名の通り、繰り返し何度でも受注・達成できるクエストです。<br>
+ただし、多くの場合は一定期間ごと（デイリー・ウィークリーなど）に回数制限があります。'
+        >リピートクエスト</a>
+
+        <a href="#" class="type-card" data-title="友好部族クエスト"
+          data-html='
+<b>友好部族クエスト</b>（旧称：蛮族クエスト）は、各地の友好部族（アライドソサエティ）から依頼される日課型のクエストです。<br>
+<b>ストーリークエスト</b>と<b>デイリークエスト</b>の2種類があり、ストーリーを進めることで毎日受注できるデイリーが解放されます。<br><br>
+■ <b>進行の流れ</b><br>
+・まずはストーリークエストを進行し、一定段階まで達成するとデイリークエストが開放されます。<br>
+・同一バージョン内の全ての友好部族のストーリークエストを完了すると、「各部族盟友クエスト」が受注可能になります。<br><br>
+■ <b>ルール・報酬</b><br>
+・デイリークエストは1部族あたり1日最大3件、合計で12件まで受注可能です。<br>
+・クリア報酬として
+<span class="highlight-exp">経験値</span>、
+<span class="highlight-gil">ギル</span>、
+<span class="highlight-item">専用通貨・アラガントームストーン・友好度</span>
+など多彩なアイテムが獲得できます。<br><br>
+■ <b>特徴・補足</b><br>
+・マップ上やNPC頭上に専用アイコンが表示され、該当クエストの目印になります。<br>
+・友好度を最大まで上げると、専用マウントや装備、家具など様々な報酬が解放されます。<br>
+・4.1以降は専用通貨が「通貨一覽」に統合され、バック枠を圧迫しません。<br>
+・受注上限や進捗はCtrl+Uで確認でき、毎日23時（日本時間）にリセットされます。
+'>
+友好部族クエスト
+</a>
+
+        <a href="#" class="type-card" data-title="シーズナルイベント"
+          data-html='
+<b>シーズナルイベント</b>は、1年を通じて特定の時期に開催される期間限定イベントです。<br>
+参加すると限定ミニオン・装備・家具・称号など、普段は入手できない報酬が手に入ります。<br><br>
+■ <b>主な季節イベントと開催時期</b><br>
+・<b>降神祭</b>（Heavensturn）…1月/新年<br>
+・<b>ヴァレンティオンデー</b>（Valentione’s Day）…2月/バレンタイン<br>
+・<b>プリンセスデー</b>（Little Ladies’ Day）…3月/ひな祭り<br>
+・<b>エッグハント</b>（Hatching-tide）…4月/イースター<br>
+・<b>ゴールドソーサー・フェスティバル</b>（Make It Rain）…初夏<br>
+・<b>紅蓮祭</b>（Moonfire Faire）…7-8月/夏祭り<br>
+・<b>新生祭</b>（The Rising）…8月/FF14周年<br>
+・<b>守護天節</b>（All Saints’ Wake）…10-11月/ハロウィン<br>
+・<b>星芒祭</b>（Starlight Celebration）…12月/クリスマス<br><br>
+イベント期間中はエオルゼア各都市が季節装飾で彩られ、特設NPCからクエストを受注できます。<br>
+※一部イベントはリアルの祝日や記念日と連動し、開催時期が毎年多少変動します。
+'>
+シーズナルイベント
+</a>
+
+       <a href="#" class="type-card" data-title="重要リピートクエスト"
+          data-html='
+一部のクロニクルクエスト（編年史クエスト）には、「登峰造極の蛮神」など繰り返し挑戦できるクエストが含まれています。<br><br>
+また、「滴水の恩」など、特定の特殊武器・ツール関連クエストも繰り返し受注が可能です。これらは報酬として、受注したジョブに応じた専用の武器や道具を獲得できます。<br><br>
+さらに、これらのクエストの中には、毎日または毎週1回のみ受注可能な、いわゆる「デイリー」「ウィークリー」タイプも存在します。当時のバージョンで重要視されたアイテムが報酬となっている場合が多いですが、アップデートにより需要が減ることもあります。
+'>
+重要リピートクエスト
+</a>
+
+        <a href="#" class="type-card" data-title="特殊クエスト"
+          data-html='
+ゲーム内ではこの種のクエストに正式な名称はありませんが、ここでは便宜上「特殊クエスト」と呼びます。<br>
+これらのクエストは進行状況の確認やクエストログへの記録がなく、ストーリーの会話やクエストアイテムを手がかりに自力で探索・進行する必要があります。<br>
+通常、<span class="highlight-item">チョコボ厩舎の解放</span>や、一部シリーズクエストのストーリー進行、アイテムの受け取りなど、重要な要素の解放に繋がる場合が多いです。
+'>
+特殊クエスト
+</a>
+
+        <a href="#" class="type-card" data-title="リーヴクエスト"
+          data-html='
+<strong>リーヴクエスト</strong>は、何度でも繰り返し受注できるクエストで、<span class="highlight-exp">経験値</span>や<span class="highlight-item">冒険者用通貨（探検手形）</span>などの報酬が得られます。<br>
+受注制限（リーヴ権）が残っている限り、何度でも挑戦可能です。難易度を調整して挑むこともでき、高難度ほど報酬が増えます。<br><br>
+傭兵リーヴ（バトルクラス用）、製作リーヴ（クラフター用）、採集リーヴ（ギャザラー用）、軍用リーヴなど、多くのバリエーションがあります。<br>
+パーティメンバーと「リーヴリンク」して同じリーヴを同時進行したり、<br>
+<em>各地の「リーヴ発行人」NPCから受注可能です。受注条件はレベルやメインクエスト進行度によって変化します。</em><br>
+消費したリーヴ権は毎日8時／20時に3ずつ自動回復します。
+'>
+リーヴクエスト
+</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer style="text-align:center; padding:1rem; color:#777; font-size:.9rem;">
+    © 2025 FF14 冒険ガイド
+  </footer>
+
+  <!-- モーダル -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close">&times;</span>
+      <h3 id="modal-title"></h3>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- JS（模态弹窗） -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const modal   = document.getElementById('modal');
+      const titleEl = document.getElementById('modal-title');
+      const bodyEl  = document.getElementById('modal-body');
+      const closeEl = document.querySelector('.modal-close');
+      const cards   = document.querySelectorAll('.type-card');
+      cards.forEach(card => {
+        card.addEventListener('click', e => {
+          e.preventDefault();
+          titleEl.textContent = card.dataset.title || card.textContent;
+          bodyEl.innerHTML    = card.dataset.html || card.dataset.text || '';
+          modal.classList.add('show');
+        });
+      });
+      closeEl.addEventListener('click', () => { modal.classList.remove('show'); });
+      modal.addEventListener('click', e => {
+        if (e.target === modal) modal.classList.remove('show');
+      });
+    });
+  </script>
+</body>
+</html>

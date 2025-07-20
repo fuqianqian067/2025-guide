@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ゴールドソーサー（Gold Saucer） - FF14コンテンツガイド</title>
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap"/>
+  <style>
+    body {
+      background: radial-gradient(ellipse at 60% 0, #fffbe2 60%, #faedd4 100%);
+      color: #5b3a0f;
+      font-family: 'Noto Sans JP', sans-serif;
+      margin: 0;
+      min-height: 100vh;
+    }
+    /* Header 和前面一致 */
+    header {
+      padding: 1rem 0;
+      background: #5b3a0f;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      box-shadow: 0 4px 16px #c7b59622;
+    }
+    .back-link {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.13rem;
+      margin-left: 1.4rem;
+      margin-right: 1.4rem;
+      font-family: 'Noto Serif JP', serif;
+      font-weight: 600;
+      transition: color .17s;
+    }
+    .back-link:hover {
+      color: #ffd966;
+      text-decoration: underline;
+    }
+    .page-title {
+      color: #fff;
+      font-size: 2.08rem;
+      font-family: 'Noto Serif JP', serif;
+      letter-spacing: 0.05em;
+      margin: 0;
+      font-weight: 700;
+      text-shadow: 0 1.5px 0 #ad8432, 0 2px 14px #a98e52;
+    }
+
+    .container {
+      max-width: 950px;
+      margin: 0 auto;
+      padding: 2.2rem 1.2rem 2.8rem 1.2rem;
+    }
+    .section-card {
+      background: linear-gradient(130deg, #fffbe6 70%, #f9eed4 100%);
+      border-radius: 16px;
+      margin-bottom: 2.2rem;
+      box-shadow: 0 4px 20px 0 rgba(230,200,120,0.11), 0 1px 0 #fff3cc inset;
+      padding: 1.7em 2em 1.2em 2em;
+      transition: box-shadow .18s;
+      position: relative;
+      overflow: hidden;
+    }
+    .section-card h2 {
+      font-size: 1.22rem;
+      font-family: 'Noto Serif JP', serif;
+      letter-spacing: 0.04em;
+      color: #be9e34;
+      font-weight: 700;
+      margin: 0 0 1em 0;
+      padding-left: .2em;
+      border-left: 6px solid #f8e09c;
+      background: linear-gradient(to right,#fdf3ce,#fff9e7 50%);
+      display: inline-block;
+      border-radius: 0 7px 7px 0;
+      box-shadow: 0 1px 0 #fff8e0;
+    }
+    .lead-highlight {
+      background: linear-gradient(90deg,#fff8cf 80%,#f7eacb 100%);
+      color: #b8932f;
+      padding: 0.12em 0.46em 0.12em 0.34em;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1.01em;
+      margin: 0 0.22em;
+      vertical-align: middle;
+      box-shadow: 0 0.5px 2px #efd98f55;
+    }
+    ul.gold-list {
+      margin: 0.5em 0 0.9em 1.5em;
+      color: #7c6429;
+      font-size: 1.04em;
+      padding: 0;
+    }
+    .gold-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #fffef7;
+      box-shadow: 0 2px 16px rgba(210,175,50,0.08);
+      border-radius: 12px;
+      overflow: hidden;
+      margin-bottom: 0.7em;
+    }
+    .gold-table th, .gold-table td {
+      padding: 0.8em 1em;
+      border-bottom: 1.5px solid #faeab7;
+      text-align: left;
+      font-size: 1.06em;
+      transition: background .17s;
+    }
+    .gold-table th {
+      background: #fae6a7;
+      color: #b08a13;
+      font-weight: bold;
+      letter-spacing: 0.02em;
+    }
+    .gold-table tr:last-child td {
+      border-bottom: none;
+    }
+    .tips {
+      color: #b69c38;
+      font-size: 0.97em;
+      margin: 0.6em 0 0.2em 0.7em;
+      font-style: italic;
+    }
+    .gold-info-box {
+      background: linear-gradient(93deg,#f9eac9 75%,#fffdf7 100%);
+      border-radius: 10px;
+      box-shadow: 0 1px 4px #e7d4aa44 inset;
+      padding: 1.1em 1.6em;
+      margin: 1.2em 0 1em 0;
+      color: #7a692d;
+      font-size: 1.02em;
+    }
+    .gold-mascot-mini {
+      display: inline-block; font-size: 1.35em; margin-right: .23em; vertical-align: middle;
+      filter: drop-shadow(0 2px 4px #e2d16a88);
+    }
+    .gold-map-icon {
+      display: inline-block; width: 1.05em; vertical-align: -.18em;
+      margin-right: 0.11em; filter: drop-shadow(0 2px 3px #f6e7a0bb);
+    }
+    @media (max-width: 700px) {
+      .container { padding: 1.1rem 0.15rem 1.2rem 0.15rem; }
+      .section-card { padding: 1em 0.5em 1em 0.7em; }
+      .page-title { font-size: 1.22rem;}
+      .back-link { font-size: .99rem; margin-left: .5rem; margin-right: .8rem;}
+      .section-card h2 { font-size: 1rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html" class="back-link">← 戻る</a>
+    <h1 class="page-title">ゴールドソーサー（Gold Saucer）</h1>
+  </header>
+
+  <div class="container">
+    <!-- 概要 -->
+    <section class="section-card">
+      <h2>基本情報</h2>
+      <div class="gold-info-box">
+        <b>ゴールドソーサー</b>は<span class="lead-highlight">パッチ2.51</span>で実装された、<b>マンデヴィル家</b>が運営する大型レジャーパーク。<br>
+        原作FFVIIからインスパイアされ、カードバトルやミニゲーム、チョコボレース等、多彩なアトラクションが揃う。獲得した<span class="lead-highlight">MGP</span>は景品・特典アイテムと交換できる。
+      </div>
+      <ul class="gold-list">
+        <li>場所：ザナラーン </li>
+        <li>主催：ゴールドソーサー・マネージャー「ゴッドベルト・マンデヴィル」</li>
+      </ul>
+    </section>
+
+    <!-- 解放条件 -->
+    <section class="section-card">
+      <h2>解放条件・はじめ方</h2>
+      <table class="gold-table">
+        <tr>
+          <th>クエスト名</th>
+          <th>開始NPC／場所</th>
+          <th>前提</th>
+        </tr>
+        <tr>
+          <td>いざ、ゴールドソーサーへ！</td>
+          <td>
+            ウルダハ・ナル回廊（X:9.6, Y:9.0）<br>
+            <span class="gold-mascot-mini">🌟</span> 揮金豪快な若者（全クラスLv15）
+          </td>
+          <td>
+            いずれかの<br>
+            <span class="lead-highlight">「三都開通」</span>クエストクリア
+          </td>
+        </tr>
+      </table>
+      <div class="tips">
+        ※開放後、サナラーンへ移動してゴールドソーサー内部に入場できます。
+      </div>
+    </section>
+
+    <!-- 主なコンテンツ -->
+    <section class="section-card">
+      <h2>主なアトラクション・ミニゲーム</h2>
+      <ul class="gold-list">
+        <li><b>チョコボレース</b>：自分のチョコボを育成し、他プレイヤーとレース対決！勝利でMGP大量GET。</li>
+        <li><b>トリプルトライアド</b>：FF8発祥のカードバトル。NPC・プレイヤーと対戦で新カード＆MGP入手。</li>
+        <li><b>ドマ式麻雀</b>：4人打ちの本格オンライン麻雀。毎日賑わう人気卓。</li>
+        <li><b>ファッションチェック</b>：毎週テーマに沿ったコーディネート審査でスコア獲得。</li>
+        <li><b>ミニくじテンダー</b>・<b>ジャンボくじテンダー</b>：宝くじ型くじ引きMGP。運試し！</li>
+        <li><b>G.A.T.E.</b>（アクティブイベント）：リアルタイム型・突発型の体験型イベント。<br>
+            <small style="color:#b69c38;">（例：障害物レース、バルーン割りなど）</small></li>
+        <li><b>各種ミニゲーム</b>：スロット、パズル、クレーンゲームほか。</li>
+      </ul>
+    </section>
+
+    <!-- 世界观・设立背景 -->
+    <section class="section-card">
+      <h2>エオルゼアとゴールドソーサー</h2>
+      <ul class="gold-list">
+        <li>第七霊災の後、雇用創出＆復興を目的に設立。「すべての人に笑顔を」を合言葉に、難民や困窮者にも職を提供。</li>
+        <li>今やエオルゼア随一の娯楽聖地に。コラボイベントや限定景品も多数！</li>
+        <li>館内マスコットは「<b>サボテンダー（サボテンダー先生）</b>」<span class="gold-mascot-mini">🌵</span>。</li>
+      </ul>
+    </section>
+  </div>
+
+  <footer style="text-align:center; padding:1.3rem; color:#bfa23d; font-size:.95rem;">
+    © 2025 FF14 冒険ガイド
+  </footer>
+</body>
+</html>
+

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ファッション・染色・幻影化 | FF14冒険ガイド</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: #fcf4e2;
+      font-family: 'Noto Sans JP', sans-serif;
+      color: #33230d;
+    }
+    header {
+      background: #5b3a0f;
+      padding: 1.1rem 1.2rem;
+      display: flex;
+      align-items: center;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 0.2em 0.6em 0.2em 0;
+      transition: opacity .18s;
+      font-family: 'Noto Serif JP', serif;
+      opacity: 0.82;
+    }
+    header a:hover { opacity: 1; text-decoration: underline;}
+    header h1 {
+      color: #fff;
+      margin: 0 0 0 1.2rem;
+      font-size: 1.45rem;
+      font-family: 'Noto Serif JP', serif;
+      font-weight: bold;
+      letter-spacing: 0.03em;
+      flex: 1;
+    }
+    .fashion-main {
+      max-width: 900px;
+      margin: 2.1rem auto 2rem;
+      padding: 0 1rem;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-family: 'Noto Serif JP', serif;
+      color: #a17919;
+      margin-bottom: 1.3rem;
+      font-weight: bold;
+      text-shadow: 0 1px 0 #f3e7d3;
+      letter-spacing: 0.05em;
+    }
+    .fashion-card {
+      background: #fffbe9;
+      border: 2.5px solid #f0d492;
+      border-radius: 14px;
+      box-shadow: 0 6px 20px rgba(200,170,60,0.09);
+      margin-bottom: 1.55rem;
+      padding: 1.3rem 1.35rem 1.15rem;
+      font-size: 1.1rem;
+      transition: box-shadow .18s;
+      position: relative;
+    }
+    .fashion-card:hover {
+      box-shadow: 0 8px 28px rgba(176,134,32,0.16);
+    }
+    .fashion-card h3 {
+      margin: 0 0 0.8em 0;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.2rem;
+      color: #835e10;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-shadow: 0 1px 0 #f3e7d3;
+    }
+    .fashion-card ul {
+      margin: 0.3em 0 0.7em 1.1em;
+      padding-left: 0.2em;
+    }
+    .fashion-card li {
+      margin-bottom: 0.25em;
+    }
+    .example-box {
+      background: #fcf6d5;
+      border-left: 4px solid #dbb955;
+      margin: 1.2em 0 1.3em 0;
+      padding: 1.05em 1.2em;
+      border-radius: 7px;
+      font-size: 1.03rem;
+      color: #7a620f;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    .fashion-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #fff7e3;
+      color: #6c4c0c;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 2px 12px rgba(200,170,60,0.10);
+      font-family: 'Noto Sans JP', sans-serif;
+      margin-top: 0.7em;
+      margin-bottom: 1.2em;
+    }
+    .fashion-table th,
+    .fashion-table td {
+      border: none;
+      padding: 0.85em 1.1em;
+      text-align: center;
+      font-size: 1.05rem;
+    }
+    .fashion-table thead th {
+      background: linear-gradient(to bottom, #fae9b7 85%, #fdf3dc 100%);
+      color: #9c780b;
+      font-weight: bold;
+      font-size: 1.09rem;
+      border-bottom: 2.5px solid #e7c179;
+    }
+    .fashion-table tbody tr:nth-child(odd) {
+      background: #fffbe8;
+    }
+    .fashion-table tbody tr:nth-child(even) {
+      background: #fcf5df;
+    }
+    .fashion-table tbody tr:hover {
+      background: #f5e2b8;
+    }
+    @media (max-width: 700px) {
+      .fashion-main { padding: 0 0.3rem; }
+      .section-title { font-size: 1.25rem; }
+      .fashion-card { padding: 1em 0.7em; font-size: 0.98rem;}
+      .fashion-table th, .fashion-table td { font-size: 0.96rem; padding: 0.6em 0.5em;}
+    }
+    footer {
+      text-align: center;
+      color: #876f34;
+      background: transparent;
+      font-size: 0.95rem;
+      padding: 1.3em 0 0.7em;
+      opacity: 0.8;
+      margin-top: 2.5em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html">&larr; 戻る</a>
+    <h1>ファッション・染色・幻影化</h1>
+  </header>
+
+  <main class="fashion-main">
+    <h2 class="section-title">FF14のファッション・コーディネートを楽しもう</h2>
+
+    <!-- 概要 -->
+    <div class="fashion-card">
+      <h3>概要</h3>
+      <p>
+        FF14の世界では、装備の染色やミラージュプリズム（幻影化）を使って、好きなコーディネートを楽しむことができます。<br>
+        毎週開催される「ファッションチェック」イベントや、都市ごとの個性的な装備など、あなたらしいスタイルで冒険しましょう！
+      </p>
+    </div>
+
+    <!-- 染色 -->
+    <div class="fashion-card">
+      <h3>染色（カララント）</h3>
+      <ul>
+        <li>装備アイテムに好きな色を付けることができるシステム。</li>
+        <li>カララント（染色剤）は店売り・製作・友好部族ショップ・MGP交換などで入手可能。</li>
+        <li>染色したい装備を右クリックし「染色」を選択、色をプレビューして決定。</li>
+        <li>一部装備は「染色1」「染色2」の2か所を個別に染め分け可能。</li>
+        <li>染色を消したい時は「テレピン油」で元に戻せます。</li>
+      </ul>
+      <div class="example-box">
+        <strong>解放クエスト：</strong><br>
+        「色とりどりの世界」<br>
+        受注場所：西ザナラーン X:12.6,Y:14.3<br>
+        NPC：スウィルゲイム（全クラス Lv15～）
+      </div>
+    </div>
+
+    <!-- 幻影化 -->
+    <div class="fashion-card">
+      <h3>武具投影（ミラージュプリズム／幻影化）</h3>
+      <ul>
+        <li>装備の性能はそのまま、見た目だけ他の装備に変更できるシステム。</li>
+        <li>解放クエストをクリアして「武具投影」スキルを習得。</li>
+        <li>投影したい装備を右クリックし「武具投影」を選択、見た目にしたい装備を選んで投影。</li>
+        <li>必要な触媒「ミラージュプリズム」を消費。</li>
+        <li>解除したい場合は「消幻剤」で元の見た目に戻せます。</li>
+        <li>都市の宿屋などにある「幻影化台」でセット保存＆一括反映も可能。</li>
+      </ul>
+      <div class="example-box">
+        <strong>解放クエスト：</strong><br>
+        「身着幻影の男」（モードゥナ X:22.1,Y:6.7, ヴィスカード）<br>
+        または「華麗なる幻影の世界」（西ザナラーン X:12.6,Y:14.3, スウィルゲイム）<br>
+        （いずれも全クラス Lv15～）
+      </div>
+    </div>
+
+    <!-- 时尚品鉴（ファッションチェック） -->
+    <div class="fashion-card">
+      <h3>ファッションチェック</h3>
+      <p>
+        毎週更新される公式イベント。<br>
+        お題に合ったコーディネートを考え、評価ポイントに応じてMGPなどの報酬がもらえます。<br>
+        <span style="font-size:0.98em;color:#988023;">SNSでは「#FF14ファッション」「#ミラプリ」などのタグで他プレイヤーのコーデ例も見られます。</span>
+      </p>
+      <table class="fashion-table">
+        <thead>
+          <tr>
+            <th>開催場所</th>
+            <th>受注NPC</th>
+            <th>開催日時</th>
+            <th>報酬</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>ゴールドソーサー X:4.8,Y:6.1</td>
+            <td>ライヴィナ</td>
+            <td>毎週金曜16時～火曜16時</td>
+            <td>MGP、限定装備など</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="example-box" style="margin-top:1em;">
+        <strong>プレイTIPS：</strong><br>
+        コーデの例はSNSで「#FF14ファッション」「#ミラプリ」で検索！<br>
+        染色・幻影化を組み合わせて、唯一無二のファッションを！
+      </div>
+    </div>
+  </main>
+  <footer>
+    © 2025 FF14 冒険ガイド
+  </footer>
+</body>
+</html>
