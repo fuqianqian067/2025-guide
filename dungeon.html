@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FF14 コンテンツ一覧</title>
+  <!-- 日本語フォント -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap"/>
+  <style>
+    body, html {
+      min-height: 100%;
+      background: #fcf4e2;
+      color: #5b3a0f;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    header {
+      padding: 1rem;
+      background: #5b3a0f;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.08rem;
+      transition: color .18s;
+    }
+    header a:hover { color: #fbe2a7; }
+    header h1 {
+      display: inline-block;
+      margin-left: 1rem;
+      color: #fff;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.18rem;
+      letter-spacing: .04em;
+      font-weight: 700;
+      vertical-align: middle;
+    }
+    .duty-section {
+      max-width: 950px;
+      margin: 2rem auto 2.5rem auto;
+      padding: 0 1.3rem;
+    }
+    .section-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.35rem;
+      color: #a0760d;
+      margin-bottom: 1.2rem;
+      text-shadow: 0 1px 0 #f9efd8;
+      letter-spacing: .03em;
+      font-weight: 700;
+    }
+    .intro-frame {
+      background: rgba(243,231,211,0.92);
+      border: 2.5px solid #e2c083;
+      border-radius: 9px;
+      padding: 1rem 1.25rem;
+      margin-bottom: 1.7rem;
+      box-shadow: 0 3px 15px rgba(220,183,101,0.07);
+    }
+    .intro-frame p {
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: #735921;
+      margin: 0;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    /* duty-table 美化 */
+    .duty-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      background: #fff7e3;
+      color: #735921;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(200,170,60,0.09);
+      margin-bottom: 2.1rem;
+      font-family: 'Noto Sans JP', sans-serif;
+      font-size: 1.04rem;
+    }
+    .duty-table caption {
+      caption-side: top;
+      text-align: left;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.12rem;
+      color: #b89136;
+      margin-bottom: 0.6rem;
+      letter-spacing: 0.04em;
+      font-weight: 600;
+    }
+    .duty-table th,
+    .duty-table td {
+      border: none;
+      padding: 0.75em 1.12em;
+      text-align: center;
+      font-size: 1.03rem;
+      font-weight: 500;
+      transition: background .15s;
+    }
+    .duty-table thead th {
+      background: linear-gradient(to bottom, #fae9b7 85%, #fdf3dc 100%);
+      color: #946f11;
+      font-weight: bold;
+      font-size: 1.10rem;
+      border-bottom: 2px solid #e7c179;
+      letter-spacing: .02em;
+    }
+    .duty-table tbody tr:nth-child(odd) {
+      background: #fffbe8;
+    }
+    .duty-table tbody tr:nth-child(even) {
+      background: #fcf5df;
+    }
+    .duty-table tbody tr:hover {
+      background: #ffeec3;
+    }
+    .duty-table td, .duty-table th {
+      border-right: 1.5px solid #efdfb2;
+    }
+    .duty-table td:last-child, .duty-table th:last-child {
+      border-right: none;
+    }
+    /* 圆角优化 */
+    .duty-table thead th:first-child { border-radius: 10px 0 0 0; }
+    .duty-table thead th:last-child { border-radius: 0 10px 0 0; }
+    .duty-table tbody tr:last-child td:first-child { border-radius: 0 0 0 10px; }
+    .duty-table tbody tr:last-child td:last-child { border-radius: 0 0 10px 0; }
+    /* 响应式优化 */
+    @media (max-width: 700px) {
+      .duty-section { padding: 0 0.3rem; }
+      .duty-table th, .duty-table td { font-size: .95rem; padding: .65em .65em; }
+      .section-title { font-size: 1.07rem; }
+    }
+    /* duty-note 美化 */
+    .duty-note {
+      margin: 2.0em 0 1.2em 0;
+      background: linear-gradient(90deg, #fff8ec 88%, #fbe5bd 100%);
+      border-left: 4.5px solid #f3cf8a;
+      border-radius: 9px;
+      box-shadow: 0 1.5px 9px rgba(210,175,85,0.08);
+      padding: 1.05em 1.3em 1.05em 1.14em;
+      font-size: 1.01rem;
+      color: #856130;
+      font-family: 'Noto Sans JP', sans-serif;
+      line-height: 1.8;
+      position: relative;
+    }
+    .duty-note .note-icon {
+      position: absolute;
+      left: 0.72em;
+      top: 0.77em;
+      font-size: 1.16em;
+      color: #e3b218;
+      opacity: .9;
+      user-select: none;
+      font-family: "Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Sans JP",sans-serif;
+    }
+    .duty-note .note-content {
+      margin-left: 2.1em;
+      display: block;
+      font-size: 1.01rem;
+    }
+    footer {
+      text-align:center;
+      padding:1rem 0 1.3rem 0;
+      color:#a08959;
+      font-size:.93rem;
+      background: none;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <a href="index.html">← 戻る</a>
+    <h1>コンテンツ一覧</h1>
+  </header>
+
+  <!-- Main -->
+  <main class="duty-section">
+    <!-- 标题 -->
+    <h2 class="section-title">副本（コンテンツ / Duty）一覧</h2>
+
+    <!-- 简介 -->
+    <div class="intro-frame">
+      <p>
+        <strong>副本（コンテンツ）</strong>は、メインマップとは独立したインスタンス型コンテンツです。<br>
+        冒険者とそのパーティだけに別マップが生成され、繰り返し挑戦可能。<br>
+        経験値や各種通貨、レア装備、ミニオンなどが獲得できます。
+      </p>
+    </div>
+
+    <!-- 表格 -->
+    <table class="duty-table">
+      <caption style="color:#b89136;">副本タイプ別人数一覧</caption>
+      <thead>
+        <tr>
+          <th>コンテンツタイプ</th>
+          <th>細分</th>
+          <th>標準人数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>ダンジョン</td>
+          <td>ノーマルダンジョン／メインクエスト</td>
+          <td>4人</td>
+        </tr>
+        <tr>
+          <td>ギルドオーダー</td>
+          <td>—</td>
+          <td>4人／8人</td>
+        </tr>
+        <tr>
+          <td>討伐・討滅戦</td>
+          <td>ノーマル／高難度／幻巧戦</td>
+          <td>4人／8人</td>
+        </tr>
+        <tr>
+          <td>レイド</td>
+          <td>アライアンス／ノーマル／零式</td>
+          <td>24人／8人／8人</td>
+        </tr>
+        <tr>
+          <td>絶コンテンツ</td>
+          <td>—</td>
+          <td>8人</td>
+        </tr>
+        <tr>
+          <td>討滅戦（大規模）</td>
+          <td>—</td>
+          <td>24人</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- 注意说明（日语，精美提示） -->
+    <div class="duty-note">
+      <span class="note-icon">💡</span>
+      <span class="note-content">
+        ※ <strong>制限解除</strong>を選択することで、規定人数より少ないパーティやソロでもコンテンツに突入できます。<br>
+        各コンテンツには開放条件があり、多くは特定のクエスト進行によって開放されます。<br>
+        また、参加にはレベルや装備品のアイテムレベル（IL）制限が設定されている場合があり、不足している場合は参加できません（レベルやILは自動で同期されます）。<br>
+        規定人数で参加する場合は、ロールやILに関係なく入場できますが、レベル制限は適用されます。<br>
+        コンテンツファインダーから参加申請が可能で、<strong>ルーレット</strong>を選ぶと1日1回ボーナス報酬を獲得できます。
+      </span>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 FF14 冒険ガイド
+  </footer>
+</body>
+</html>

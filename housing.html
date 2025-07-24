@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>ハウジング | FF14冒険ガイド</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin:0; background:#fcf4e2; color:#3a250d;
+      font-family: 'Noto Sans JP',sans-serif;
+    }
+    header {
+      background: #5b3a0f;
+      color: #fff;
+      padding: 1.2rem 1.4rem;
+      font-size: 1.2rem;
+      font-family: 'Noto Serif JP', serif;
+      letter-spacing: 0.04em;
+      display: flex; align-items: center;
+    }
+    header a {
+      color:#fff; text-decoration:none; opacity:0.83;
+      font-size:1.1rem;
+      transition: opacity .15s;
+    }
+    header a:hover { opacity:1; text-decoration: underline; }
+    header h1 {
+      font-size: 1.45rem; margin:0 0 0 1.3rem; font-weight:bold;
+      flex:1;
+    }
+    main {
+      max-width: 960px;
+      margin: 2.2rem auto 2.5rem;
+      padding: 0 1.1rem;
+    }
+    .section-title {
+      font-size:2.1rem;
+      color: #a17919;
+      font-family:'Noto Serif JP',serif;
+      font-weight: bold;
+      margin-bottom: 1.7rem;
+      letter-spacing: 0.05em;
+      text-shadow:0 1px 0 #f3e7d3;
+    }
+    .card-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2.1rem 1.3rem;
+      margin-bottom:2.5rem;
+    }
+    @media (max-width:700px) {
+      .card-grid { grid-template-columns: 1fr; gap: 1.4rem;}
+      .section-title { font-size:1.3rem;}
+    }
+    .card {
+      background: #fff8de;
+      border:2.3px solid #dec286;
+      border-radius:12px;
+      box-shadow: 0 3px 18px rgba(160,134,30,0.08);
+      padding: 1.3rem 1.1rem 1.05rem;
+      transition: box-shadow .18s;
+      font-size:1.07rem;
+    }
+    .card:hover {
+      box-shadow:0 7px 24px rgba(180,156,49,0.17);
+    }
+    .card h3 {
+      color:#8b650f; margin:0 0 .7em 0; font-size:1.18rem;
+      font-family:'Noto Serif JP',serif;
+      letter-spacing:.04em;
+      font-weight:600;
+    }
+    .card ul {
+      margin:0.4em 0 0.7em 1.1em;
+      padding:0;
+    }
+    .card li { margin-bottom:0.23em; }
+    .info-box {
+      background: #fffbe8;
+      border-left:4px solid #bfa04a;
+      padding:0.95em 1.1em;
+      margin:1em 0 1.1em 0;
+      border-radius:7px;
+      color: #7a620f;
+      font-size:1.03rem;
+    }
+    .tips {
+      color:#744e11;
+      background: #f7ebc1;
+      border-radius: 8px;
+      padding: 0.85em 1em;
+      font-size: 0.99rem;
+      margin: 1.2em 0 0 0;
+      border-left:3.2px solid #dac17b;
+    }
+    footer {
+      text-align:center;
+      color:#876f34;
+      font-size:.98rem;
+      opacity: 0.84;
+      margin:2.5em 0 0 0;
+      padding-bottom:1em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">&larr; 戻る</a>
+    <h1>ハウジング</h1>
+  </header>
+
+  <main>
+    <h2 class="section-title">FF14のハウジング（住宅）システム</h2>
+
+    <div class="card-grid">
+
+      <section class="card">
+        <h3>ハウジングとは</h3>
+        <ul>
+          <li>パッチ2.1より実装された、プレイヤーが土地・家を所有し自由に装飾できるシステム。</li>
+          <li>リムサ・ロミンサ／グリダニア／ウルダハ／ゴールドソーサー／イシュガルドの住宅街に土地を購入可能。</li>
+          <li>冒険者部隊ハウス・個人ハウス・アパルトメント（マンション）の3タイプ。</li>
+        </ul>
+        <div class="info-box">
+          <b>購入条件：</b>
+          <ul>
+            <li>土地購入は50レベル＆軍階級が必要。<br>
+            <li>ギルにて土地・家を購入。</li>
+            <li>抽選購入と先着購入が混在。</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>住宅街の特徴</h3>
+        <ul>
+          <li>各都市に固有デザインの住宅エリア。</li>
+          <li>区・拡張区・マンション棟ごとに複数の土地／部屋を販売。</li>
+          <li>土地にはS/M/Lサイズがあり、それぞれ建てられる家の大きさも異なる。</li>
+        </ul>
+        <div class="info-box">
+          <b>各住宅街の開放クエスト例：</b>
+          <ul>
+            <li>リムサ・ロミンサ：碧海の家</li>
+            <li>グリダニア：ラベンダーベッド</li>
+            <li>ウルダハ：ゴブレットビュート</li>
+            <li>ゴールドソーサー：シロガネ</li>
+            <li>イシュガルド：エンピレアム</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>家・土地の購入と管理</h3>
+        <ul>
+          <li>土地ごとに購入価格が異なり、購入時はギルで支払い。</li>
+          <li>土地の等級・サイズによってS/M/Lの家を建て分け。</li>
+          <li>購入後は外装／内装・家具・庭具・NPC設置など自由にカスタマイズ可能。</li>
+        </ul>
+        <div class="info-box">
+          <b>土地・家の抽選購入</b><br>
+          指定期間に応募し、当選者が購入権利を得るシステム。<br>
+          落選の場合は全額ギル返還。
+        </div>
+        <div class="tips">
+          ※自動撤去（45日不在）は要注意。長期ログインしない場合は家が撤去されるので、定期的に入室しましょう。
+        </div>
+      </section>
+
+      <section class="card">
+        <h3>カスタマイズと機能</h3>
+        <ul>
+          <li>内装（壁・床・照明）や外装（屋根・壁・門など）を自由に変更。</li>
+          <li>家具・庭具・NPC（商人/修理/郵便/チョコボ厩舎等）設置可能。</li>
+          <li>ハウジング工房や個人部屋・アパルトメントも利用可。</li>
+          <li>マンション型の「アパルトメント」は1キャラ1部屋購入可（50万ギル）。</li>
+        </ul>
+        <div class="tips">
+          <b>庭具・家具の設置数</b>は家のサイズごとに異なります（S:200個、M:300個、L:400個）。<br>
+          倉庫・庭倉庫機能もあり。
+        </div>
+      </section>
+    </div>
+    <div class="card" style="margin-bottom:2.4rem;">
+      <h3>ハウジング便利情報</h3>
+      <ul>
+        <li>引越（ハウス転居）や、部隊ハウスの個人部屋も利用可能。</li>
+        <li>マンション・公寓は長期不在でも自動撤去されません。</li>
+        <li>家具・外装・庭具はマーケットや製作・ショップで入手。</li>
+        <li>部隊工房で飛空艇や潜水艦などのクラフトも楽しめます。</li>
+        <li>訪問権限やルームメイト設定、強制退去など権限管理も可能。</li>
+      </ul>
+    </div>
+  </main>
+  <footer>
+    © 2025 FF14冒険ガイド
+  </footer>
+</body>
+</html>

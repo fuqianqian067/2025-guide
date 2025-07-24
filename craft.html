@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ジョブ紹介 – FF14 冒険ガイド</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&family=Noto+Serif+JP:wght@400;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Noto Sans JP', sans-serif;
+      background: #faf8f0;
+      color: #3a2e1d;
+      line-height: 1.6;
+    }
+    header {
+      background: #5b3a0f;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+    }
+    header a {
+      color: #fff;
+      text-decoration: none;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.2rem;
+    }
+    header h1 {
+      color: #fff;
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.5rem;
+      margin-left: 1rem;
+    }
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+    .section-title {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.8rem;
+      color: #a17919;
+      margin: 2rem 0 1rem;
+      border-left: 4px solid #dbb955;
+      padding-left: 0.6rem;
+    }
+    .job-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1rem;
+      margin-bottom: 1.2rem;
+      position: relative;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .job-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    }
+    .job-card img {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+    }
+    .job-card h3 {
+      font-family: 'Noto Serif JP', serif;
+      font-size: 1.4rem;
+      color: #5b3a0f;
+      margin-bottom: 0.6rem;
+    }
+    .job-card p {
+      margin-bottom: 0.8rem;
+    }
+    .job-card p strong {
+      color: #a17919;
+    }
+    .job-card ul {
+      margin-left: 1.2rem;
+      list-style: disc;
+    }
+    .job-card ul li { margin-bottom: 0.4rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← 戻る</a>
+    <h1>ジョブ紹介</h1>
+  </header>
+  <main>
+
+    <!-- 戦闘精鋭 -->
+    <h2 class="section-title">戦闘精鋭</h2>
+    <!-- 騎士 -->
+    <div class="job-card">
+      <img src="images/qishi.png" alt="騎士">
+      <h3>騎士</h3>
+      <p><strong>基本紹介</strong><br>
+      騎士は片手剣と盾を武器とするタンクロールの特職で、敵のヘイトを集め仲間を守ります。<br>
+      剣術士の全スキルに加え騎士固有の特職スキルを習得。主ステータスは耐久力(VIT)、力量(STR)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>剣術士Lv30＆剣術士ジョブクエストクリア</li>
+        <li>ジョブクエスト「ナールザル双剣」クリア（メインクエ20）</li>
+        <li>ジョブクエスト「青葉の思考」クリア（騎士Lv30）</li>
+        <li>ジョブクエスト「自由騎士の誓約」クリア</li>
+      </ul>
+    </div>
+    <!-- 戦士 -->
+    <div class="job-card">
+      <img src="images/zhanshi.png" alt="戦士">
+      <h3>戦士</h3>
+      <p><strong>基本紹介</strong><br>
+      戦士は両手斧を武器とするタンクロール。重装甲で敵のヘイトを集め味方を守ります。<br>
+      獣魂(Beast Gauge)を消費して爆発的火力を発揮しつつ、自己回復も得意です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>斧術士Lv30＆ジョブクエストクリア</li>
+        <li>メインクエ「憎しみ断つ日」クリア（Lv20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（戦士Lv30）</li>
+        <li>ジョブクエ「責任と使命」クリア</li>
+      </ul>
+    </div>
+    <!-- 暗黒騎士 -->
+    <div class="job-card">
+      <img src="images/dk.png" alt="暗黒騎士">
+      <h3>暗黒騎士</h3>
+      <p><strong>基本紹介</strong><br>
+      暗黒騎士は両手大剣を扱うタンクロール。魔法ダメージ軽減やシールドで被ダメージを大幅に減少させます。<br>
+      バージョン3.0で追加され、Lv30から習得。主ステータスは耐久力(VIT)、力量(STR)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>イシュガルド開放後のメインクエストクリア</li>
+        <li>ジョブクエ「暗黒騎士の伝言」受注</li>
+        <li>ジョブクエ「深淵より来たりし者」クリア（暗黒騎士Lv50）</li>
+      </ul>
+    </div>
+    <!-- ガンブレイカー -->
+    <div class="job-card">
+      <img src="images/jue.png" alt="ガンブレイカー">
+      <h3>ガンブレイカー</h3>
+      <p><strong>基本紹介</strong><br>
+      ガンブレイカーは銃剣を武器とするタンクロール。敵のヘイトを集めつつ味方を守ります。<br>
+      バージョン5.0で追加、Lv60から習得。主ステータスは耐久力(VIT)、力量(STR)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>任意戦闘精鋭/魔法導師Lv60以上</li>
+        <li>ジョブクエ「ガンブレイカーになる」クリア</li>
+      </ul>
+    </div>
+    <!-- モンク -->
+    <div class="job-card">
+      <img src="images/wuseng.png" alt="モンク">
+      <h3>モンク</h3>
+      <p><strong>基本紹介</strong><br>
+      モンクは体術武器を操る近接DPS。連撃で撃破ゲージを溜め、高ダメージを放ちます。<br>
+      格闘士の全スキルとジョブ固有特性を習得。主ステータスは力量(STR)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>格闘士Lv30＆ジョブクエストクリア</li>
+        <li>メインクエ「拳聖」クリア（Lv20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（モンクLv30）</li>
+        <li>ジョブクエ「亡国の雷鳴」クリア</li>
+      </ul>
+    </div>
+    <!-- 竜騎士 -->
+    <div class="job-card">
+      <img src="images/longqi.png" alt="竜騎士">
+      <h3>竜騎士</h3>
+      <p><strong>基本紹介</strong><br>
+      竜騎士は長槍を武器とする近接DPS。跳躍攻撃と鋭い一撃を得意とします。<br>
+      槍術士の全スキルとジョブ特性を習得。主ステータスは力量(STR)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>槍術士Lv30＆ジョブクエストクリア</li>
+        <li>メインクエ「勇気の証」クリア（Lv20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（竜騎士Lv30）</li>
+        <li>ジョブクエ「竜眼」クリア</li>
+      </ul>
+    </div>
+    <!-- 忍者 -->
+    <div class="job-card">
+      <img src="images/renzhe.png" alt="忍者">
+      <h3>忍者</h3>
+      <p><strong>基本紹介</strong><br>
+      忍者は両手刀で迅速に斬り刻む近接DPS。隠形中の攻撃や結印順序が鍵となります。<br>
+      双剣士の全スキルと特性を習得。主ステータスは器用さ(DEX)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>双剣士Lv30＆ジョブクエストクリア</li>
+        <li>メインクエ「手の届く勝利」クリア（Lv20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（忍者Lv30）</li>
+        <li>ジョブクエ「月と影」クリア</li>
+      </ul>
+    </div>
+    <!-- 侍 -->
+    <div class="job-card">
+      <img src="images/panzi.png" alt="侍">
+      <h3>侍</h3>
+      <p><strong>基本紹介</strong><br>
+      侍は日本刀を使う近接DPS。居合斬りや奥義で高ダメージを与えます。<br>
+      バージョン4.0からLv50で習得。主ステータスは力量(STR)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>任意戦闘精鋭/魔法導師Lv50以上</li>
+        <li>ジョブクエ「侍の道」クリア</li>
+      </ul>
+    </div>
+    <!-- 吟遊詩人 -->
+    <div class="job-card">
+      <img src="images/shiren.png" alt="吟遊詩人">
+      <h3>吟遊詩人</h3>
+      <p><strong>基本紹介</strong><br>
+      吟遊詩人は弓を武器に遠隔DPS＆バフを兼ねるジョブ。詩で味方を強化します。<br>
+      弓術士の全スキルと特性を習得。主ステータスは器用さ(DEX)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>弓術士Lv30＆ジョブクエストクリア</li>
+        <li>メインクエ「迷いなき瞳」クリア（Lv20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（吟遊詩人Lv30）</li>
+        <li>ジョブクエ「詩と弓交わる旋律」クリア</li>
+      </ul>
+    </div>
+    <!-- 機工士 -->
+    <div class="job-card">
+      <img src="images/shouqiangxiaozi.png" alt="機工士">
+      <h3>機工士</h3>
+      <p><strong>基本紹介</strong><br>
+      機工士は銃火器とオートタレットを操る遠隔DPS。<br>
+      バージョン3.0からLv30で習得。主ステータスは器用さ(DEX)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>イシュガルド開放後のメインクエストクリア</li>
+        <li>ジョブクエ「機工士になる」クリア（Lv50）</li>
+      </ul>
+    </div>
+    <!-- 踊り子 -->
+    <div class="job-card">
+      <img src="images/wuzhe.png" alt="踊り子">
+      <h3>踊り子</h3>
+      <p><strong>基本紹介</strong><br>
+      踊り子は投擲武器を使う遠隔DPS＆バフジョブ。<br>
+      バージョン5.0からLv60で習得。主ステータスは器用さ(DEX)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>任意戦闘精鋭/魔法導師Lv60以上</li>
+        <li>ジョブクエ「踊り子になる」クリア（Lv60）</li>
+        <li>ジョブクエ「舞踏の来訪」クリア</li>
+      </ul>
+    </div>
+
+    <!-- 魔法導師 -->
+    <h2 class="section-title">魔法導師</h2>
+    <!-- 各魔法ジョブカードここに同様の形式で配置 -->
+    <div class="job-card">
+      <img src="images/shawanyi.png" alt="黒魔道士">
+      <h3>黒魔道士</h3>
+      <p><strong>基本紹介</strong><br>
+      黒魔道士は両手杖を用い、火・氷・雷を操る遠隔魔法DPS。<br>
+      呪術士の全スキルを継承し、主ステータスは知力(INT)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>呪術士Lv30＆ジョブクエストクリア</li>
+        <li>ジョブクエ「臆病者の勇気」クリア（メインクエ20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（黒魔道士Lv30）</li>
+        <li>ジョブクエ「罪人の囁き、運命の神託」クリア</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/zhaoye.png" alt="召喚士">
+      <h3>召喚士</h3>
+      <p><strong>基本紹介</strong><br>
+      召喚士は魔導書を用い、蛮神を召喚して攻撃する魔法導師。<br>
+      秘術士の全スキルを継承し、主ステータスは知力(INT)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>秘術士Lv30＆ジョブクエストクリア</li>
+        <li>ジョブクエ「秘術最高命題の証明」クリア（メインクエ20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（召喚士Lv30）</li>
+        <li>ジョブクエ「業火の召喚」クリア</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/chipusa.png" alt="赤魔道士">
+      <h3>赤魔道士</h3>
+      <p><strong>基本紹介</strong><br>
+      赤魔道士は刺剣を武器に、遠隔魔法と近接攻撃を両立するジョブ。<br>
+      バージョン4.0からLv50で習得。主ステータスは知力(INT)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>任意戦闘精鋭/魔法導師Lv50以上</li>
+        <li>ジョブクエ「赤魔道士になる」クリア</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/huaye.png" alt="絵筆魔導師">
+      <h3>絵筆魔導師</h3>
+      <p><strong>基本紹介</strong><br>
+      絵筆魔導師は画筆を武器とする魔法導師。<br>
+      バージョン7.0からLv80で習得。主ステータスは知力(INT)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>任意戦闘精鋭/魔法導師Lv80以上</li>
+        <li>ジョブクエ「絵筆魔導師の継承者」クリア</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/qingmo.png" alt="青魔道士">
+      <h3>青魔道士</h3>
+      <p><strong>基本紹介</strong><br>
+      青魔道士は青魔法を学ぶ特殊なジョブ。<br>
+      バージョン4.5からLv1で習得、レベル上限80。主ステータスは知力(INT)。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>任意戦闘精鋭/魔法導師Lv50以上</li>
+        <li>メインクエスト「超越幻想、究極神兵」クリア（Lv50）</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/baimo.png" alt="白魔道士">
+      <h3>白魔道士</h3>
+      <p><strong>基本紹介</strong><br>
+      白魔道士は両手杖を用い、純粋な回復魔法を操るヒーラー。<br>
+      幻術士の全スキルを継承し、主ステータスは精神(MND)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>幻術士Lv30＆ジョブクエストクリア</li>
+        <li>ジョブクエ「領悟自然」クリア（メインクエ20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（白魔道士Lv30）</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/xuezhe.png" alt="学者">
+      <h3>学者</h3>
+      <p><strong>基本紹介</strong><br>
+      学者は魔導書と妖精を駆使するヒーラー。<br>
+      秘術士由来のスキルで、主ステータスは精神(MND)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>秘術士Lv30＆ジョブクエストクリア</li>
+        <li>ジョブクエ「秘術最高命題の証明」クリア（メインクエ20）</li>
+        <li>ジョブクエ「青葉の思考」クリア（学者Lv30）</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/mang.png" alt="占星術師">
+      <h3>占星術師</h3>
+      <p><strong>基本紹介</strong><br>
+      占星術師は天球儀とカードを使うヒーラー。<br>
+      バージョン3.0からLv30で習得、主ステータスは精神(MND)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>イシュガルド開放後のメインクエストクリア</li>
+        <li>ジョブクエ「占星術師への道」受注→クリア（Lv50）</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/sheng.png" alt="賢者">
+      <h3>賢者</h3>
+      <p><strong>基本紹介</strong><br>
+      賢者は賢具を用いるヒーラー。<br>
+      バージョン6.0からLv70で習得、主ステータスは精神(MND)です。</p>
+      <p><strong>特職要件</strong></p>
+      <ul>
+        <li>任意戦闘精鋭/魔法導師Lv70以上</li>
+        <li>ジョブクエ「賢者の誓い」クリア</li>
+      </ul>
+    </div>
+
+    <!-- 能工巧匠 -->
+    <h2 class="section-title">能工巧匠</h2>
+
+    <div class="job-card">
+      <img src="images/kan.png" alt="刻木匠">
+      <h3>刻木匠</h3>
+      <p><strong>基本紹介</strong><br>
+      刻木匠は手鋸を主工具、羊角錘を副工具とし、木製品を製作する生産ジョブ。<br>
+      園芸師が採集した木材を素材に、武器・家具など幅広く手がけます。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>グリダニア新市街 (X:10.8,Y:12.1) のコーグからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/锻铁.png" alt="鍛冶匠">
+      <h3>鍛冶匠</h3>
+      <p><strong>基本紹介</strong><br>
+      鍛冶匠は鳥嘴錘を主工具、やすりを副工具とし、鉄製品を製作。<br>
+      採掘師が採集した鉱石を素材に、武器・防具などを製作します。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>リムサ上甲板 (X:10.1,Y:15) のランドヴォフからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/铸甲.png" alt="甲冑匠">
+      <h3>甲冑匠</h3>
+      <p><strong>基本紹介</strong><br>
+      甲冑匠は甲冑錘を主工具、手鉗を副工具とし、防具を製作。<br>
+      採掘師の鉱石を素材に、盾や鎧を製作します。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>リムサ上甲板 (X:10.2,Y:15) のグ・ワナコからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/diaojin.png" alt="彫金匠">
+      <h3>彫金匠</h3>
+      <p><strong>基本紹介</strong><br>
+      彫金匠は彫金錘を主工具、砥石を副工具とし、宝飾品を製作。<br>
+      採掘師が採集した原石・鉱石を素材に、装飾品や小道具を製作します。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>ウルダハ来生回廊 (X:10.5,Y:13.1) のジェマムからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/制革.png" alt="革細工師">
+      <h3>革細工師</h3>
+      <p><strong>基本紹介</strong><br>
+      革細工師は裁皮刀を主工具、平斬を副工具とし、革製品を製作。<br>
+      モンスターの革を素材に、軽装備やアクセサリを製作します。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>グリダニア旧市街 (X:12.5,Y:8.2) のランドールからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/caifeng.png" alt="裁縫師">
+      <h3>裁縫師</h3>
+      <p><strong>基本紹介</strong><br>
+      裁縫師は縫い針を主工具、紡車を副工具とし、布製品を製作。<br>
+      園芸師が採集した繊維を素材に、布装備や装飾品を製作します。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>ウルダハ来生回廊 (X:13.9,Y:13.2) のマルニーからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/lianjin.png" alt="錬金術師">
+      <h3>錬金術師</h3>
+      <p><strong>基本紹介</strong><br>
+      錬金術師は蒸留器を主工具、研鉢を副工具とし、薬品や素材を製作。<br>
+      モンスター素材を中心に、薬品や合成素材を幅広く製作します。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>ウルダハ来生回廊 (X:8.9,Y:13.8) のマルニーからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/chuzi.png" alt="調理師">
+      <h3>調理師</h3>
+      <p><strong>基本紹介</strong><br>
+      調理師は平底鍋を主工具、包丁を副工具とし、食事を調理。<br>
+      園芸師・漁師の素材を使い、バフ効果のある料理を製作します。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>リムサ下甲板 (X:7.9,Y:14.2) のチャリスからクエスト受注</li>
+      </ul>
+    </div>
+
+    <!-- 大地使者 -->
+    <h2 class="section-title">大地使者</h2>
+    <div class="job-card">
+      <img src="images/wakuang.png" alt="採掘師">
+      <h3>採掘師</h3>
+      <p><strong>基本紹介</strong><br>
+      採掘師はつるはしを主工具、石槌を副工具とし、エオルゼア大陸で鉱石を採集する大地使者です。<br>
+      採掘場（黄色アイコン）と岩場（青色アイコン）の2種類があり、甲冑師や鍛冶師の素材となります。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>ウルダハ来生回廊 (X:11.3,Y:14.3) のリネットからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/caiji.png" alt="園芸師">
+      <h3>園芸師</h3>
+      <p><strong>基本紹介</strong><br>
+      園芸師は手斧を主工具、鎌を副工具とし、エオルゼア大陸で植物を採集する大地使者です。<br>
+      良材（黄色麦アイコン）と草場（青色麦アイコン）の2種類があり、刻木師・裁縫師・錬金術師・調理師の素材となります。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>グリダニア旧市街 (X:6.4,Y:8.3) のレオンソからクエスト受注</li>
+      </ul>
+    </div>
+    <div class="job-card">
+      <img src="images/diaoyu.png" alt="漁師">
+      <h3>漁師</h3>
+      <p><strong>基本紹介</strong><br>
+      漁師は釣竿を主工具として、河川・砂海・雲海などで魚を釣る大地使者です。<br>
+      釣り餌を消費し、釣り上げた魚は調理師や錬金術師の素材となります。</p>
+      <p><strong>転職要件</strong></p>
+      <ul>
+        <li>任意ジョブLv10</li>
+        <li>リムサ下甲板 (X:7.9,Y:14.2) のエンネムリカからクエスト受注</li>
+      </ul>
+    </div>
+
+  </main>
+</body>
+</html>
